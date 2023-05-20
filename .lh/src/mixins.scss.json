@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/mixins.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1684575522416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1684575522416,
+            "name": "Commit-0",
+            "content": "@mixin border($border-type, $background) {\r\n\tbackground: $background;\r\n\tborder-color: $background;\r\n\t@if $border-type == full {\r\n\t\tborder: 0.5rem solid;\r\n\t} @else {\r\n\t\tborder-#{$border-type}: 0.5rem solid;\r\n\t}\r\n\r\n\tborder-image-source: url('https://raw.githubusercontent.com/seba9989/paraclox/main/src/assets/UI/borders/default/dark.png');\r\n\tborder-image-slice: 10;\r\n\tbackground-clip: padding-box;\r\n}\r\n"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+@use '/src/index';
+
+.main {
+	@include index.border(bottom, var(--bg-darker));
+	height: 5rem;
+}

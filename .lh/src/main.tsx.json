@@ -1,0 +1,94 @@
+{
+    "sourceFile": "src/main.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 19,
+            "patches": [
+                {
+                    "date": 1684573568270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1684573589584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,10 @@\n import App from './App.tsx'\n import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n import './index.css'\n \n+const \n+\n ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n \t<React.StrictMode>\n \t\t<App />\n \t</React.StrictMode>\n"
+                },
+                {
+                    "date": 1684573596802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import React from 'react'\n+import ReactDOM from 'react-dom/client'\n+import App from './App.tsx'\n+import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n+import './index.css'\n+\n+const router = createBrowserRouter\n+\n+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n+\t<React.StrictMode>\n+\t\t<App />\n+\t</React.StrictMode>\n+)\n"
+                },
+                {
+                    "date": 1684573602126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import React from 'react'\n+import ReactDOM from 'react-dom/client'\n+import App from './App.tsx'\n+import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n+import './index.css'\n+\n+const router = createBrowserRouter([])\n+\n+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n+\t<React.StrictMode>\n+\t\t<App />\n+\t</React.StrictMode>\n+)\n"
+                },
+                {
+                    "date": 1684573611254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import React from 'react'\n+import ReactDOM from 'react-dom/client'\n+import App from './App.tsx'\n+import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n+import './index.css'\n+\n+const router = createBrowserRouter([\n+  {\n+    path:\n+  }\n+])\n+\n+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n+\t<React.StrictMode>\n+\t\t<App />\n+\t</React.StrictMode>\n+)\n"
+                },
+                {
+                    "date": 1684573618635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+import React from 'react'\n+import ReactDOM from 'react-dom/client'\n+import App from './App.tsx'\n+import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n+import './index.css'\n+\n+const router = createBrowserRouter([\n+  {\n+    path: '/'\n+    ele\n+  }\n+])\n+\n+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n+\t<React.StrictMode>\n+\t\t<App />\n+\t</React.StrictMode>\n+)\n"
+                },
+                {
+                    "date": 1684573631129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+import React from 'react'\n+import ReactDOM from 'react-dom/client'\n+import App from './App.tsx'\n+import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n+import './index.css'\n+\n+const router = createBrowserRouter([\n+  {\n+    path: '/',\n+    element\n+  }\n+])\n+\n+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n+\t<React.StrictMode>\n+\t\t<App />\n+\t</React.StrictMode>\n+)\n"
+                },
+                {
+                    "date": 1684573639159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+import React from 'react'\n+import ReactDOM from 'react-dom/client'\n+import App from './App.tsx'\n+import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n+import './index.css'\n+\n+const router = createBrowserRouter([\n+  {\n+    path: '/',\n+    element: <></>\n+  }\n+])\n+\n+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n+\t<React.StrictMode>\n+\t\t<App />\n+\t</React.StrictMode>\n+)\n"
+                },
+                {
+                    "date": 1684573650522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+import React from 'react'\n+import ReactDOM from 'react-dom/client'\n+import App from './App.tsx'\n+import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n+import './index.css'\n+\n+const router = createBrowserRouter([\n+  {\n+    path: '/',\n+    element: <>test</>\n+  }\n+])\n+\n+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n+\t<React.StrictMode>\n+\t\t<R\n+\t</React.StrictMode>\n+)\n"
+                },
+                {
+                    "date": 1684573656077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+import React from 'react'\n+import ReactDOM from 'react-dom/client'\n+import App from './App.tsx'\n+import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n+import './index.css'\n+\n+const router = createBrowserRouter([\n+  {\n+    path: '/',\n+    element: <>test</>\n+  }\n+])\n+\n+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n+\t<React.StrictMode>\n+\t\t<RouterProvider re\n+\t</React.StrictMode>\n+)\n"
+                },
+                {
+                    "date": 1684573661535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+import React from 'react'\n+import ReactDOM from 'react-dom/client'\n+import App from './App.tsx'\n+import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n+import './index.css'\n+\n+const router = createBrowserRouter([\n+  {\n+    path: '/',\n+    element: <>test</>\n+  }\n+])\n+\n+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n+\t<React.StrictMode>\n+\t\t<RouterProvider router={r}\n+\t</React.StrictMode>\n+)\n"
+                },
+                {
+                    "date": 1684574278037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+import React from 'react'\n+import ReactDOM from 'react-dom/client'\n+import App from './App.tsx'\n+import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n+import './index.css'\n+\n+const router = createBrowserRouter([\n+\t{\n+\t\tpath: '/',\n+\t\telement: <>test</>,\n+    \n+\t},\n+])\n+\n+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n+\t<React.StrictMode>\n+\t\t<RouterProvider router={router} />\n+\t</React.StrictMode>\n+)\n"
+                },
+                {
+                    "date": 1684574291338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+import React from 'react'\n+import ReactDOM from 'react-dom/client'\n+import App from './App.tsx'\n+import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n+import './index.css'\n+\n+const router = createBrowserRouter([\n+\t{\n+\t\tpath: '/',\n+\t\telement: <>test</>,\n+    children: [\n+      \n+    ]\n+\t},\n+])\n+\n+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n+\t<React.StrictMode>\n+\t\t<RouterProvider router={router} />\n+\t</React.StrictMode>\n+)\n"
+                },
+                {
+                    "date": 1684574304603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+import React from 'react'\n+import ReactDOM from 'react-dom/client'\n+import App from './App.tsx'\n+import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n+import './index.css'\n+\n+const router = createBrowserRouter([\n+\t{\n+\t\tpath: '/',\n+\t\telement: <>test</>,\n+    children: [\n+      {\n+        path\n+      }\n+    ]\n+\t},\n+])\n+\n+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n+\t<React.StrictMode>\n+\t\t<RouterProvider router={router} />\n+\t</React.StrictMode>\n+)\n"
+                },
+                {
+                    "date": 1684574315388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+import React from 'react'\n+import ReactDOM from 'react-dom/client'\n+import App from './App.tsx'\n+import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n+import './index.css'\n+\n+const router = createBrowserRouter([\n+\t{\n+\t\tpath: '/',\n+\t\telement: <>test</>,\n+    children: [\n+      {\n+        path: '/'\n+      }\n+    ]\n+\t},\n+])\n+\n+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n+\t<React.StrictMode>\n+\t\t<RouterProvider router={router} />\n+\t</React.StrictMode>\n+)\n"
+                },
+                {
+                    "date": 1684574324029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+import React from 'react'\n+import ReactDOM from 'react-dom/client'\n+import App from './App.tsx'\n+import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n+import './index.css'\n+\n+const router = createBrowserRouter([\n+\t{\n+\t\tpath: '/',\n+\t\telement: <>test</>,\n+    children: [\n+      {\n+        path: '/'\n+        elemen\n+      }\n+    ]\n+\t},\n+])\n+\n+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n+\t<React.StrictMode>\n+\t\t<RouterProvider router={router} />\n+\t</React.StrictMode>\n+)\n"
+                },
+                {
+                    "date": 1684574334988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+import React from 'react'\n+import ReactDOM from 'react-dom/client'\n+import App from './App.tsx'\n+import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n+import './index.css'\n+\n+const router = createBrowserRouter([\n+\t{\n+\t\tpath: '/',\n+\t\telement: <>test</>,\n+    children: [\n+      {\n+        path: '/',\n+        element: ,\n+      }\n+    ]\n+\t},\n+])\n+\n+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n+\t<React.StrictMode>\n+\t\t<RouterProvider router={router} />\n+\t</React.StrictMode>\n+)\n"
+                },
+                {
+                    "date": 1684574342871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+import React from 'react'\n+import ReactDOM from 'react-dom/client'\n+import App from './App.tsx'\n+import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n+import './index.css'\n+\n+const router = createBrowserRouter([\n+\t{\n+\t\tpath: '/',\n+\t\telement: <>test</>,\n+    children: [\n+      {\n+        path: '/',\n+        element: <Home,\n+      }\n+    ]\n+\t},\n+])\n+\n+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n+\t<React.StrictMode>\n+\t\t<RouterProvider router={router} />\n+\t</React.StrictMode>\n+)\n"
+                },
+                {
+                    "date": 1684574355847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+import React from 'react'\n+import ReactDOM from 'react-dom/client'\n+import App from './App.tsx'\n+import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n+import './index.csss'\n+import HomePage from './pages/Home/Home.tsx'\n+\n+const router = createBrowserRouter([\n+\t{\n+\t\tpath: '/',\n+\t\telement: <>test</>,\n+\t\tchildren: [\n+\t\t\t{\n+\t\t\t\tpath: '/',\n+\t\t\t\telement: <HomePage />,\n+\t\t\t},\n+\t\t],\n+\t},\n+])\n+\n+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n+\t<React.StrictMode>\n+\t\t<RouterProvider router={router} />\n+\t</React.StrictMode>\n+)\n"
+                },
+                {
+                    "date": 1684574391396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+import React from 'react'\n+import ReactDOM from 'react-dom/client'\n+import App from './App.tsx'\n+import { createBrowserRouter, RouterProvider } from 'react-router-dom'\n+import './index.scss'\n+import HomePage from './pages/Home/Home.tsx'\n+\n+const router = createBrowserRouter([\n+\t{\n+\t\tpath: '/',\n+\t\telement: <App,\n+\t\tchildren: [\n+\t\t\t{\n+\t\t\t\tpath: '/',\n+\t\t\t\telement: <HomePage />,\n+\t\t\t},\n+\t\t],\n+\t},\n+])\n+\n+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n+\t<React.StrictMode>\n+\t\t<RouterProvider router={router} />\n+\t</React.StrictMode>\n+)\n"
+                }
+            ],
+            "date": 1684573568270,
+            "name": "Commit-0",
+            "content": "import React from 'react'\nimport ReactDOM from 'react-dom/client'\nimport App from './App.tsx'\nimport { createBrowserRouter, RouterProvider } from 'react-router-dom'\nimport './index.css'\n\nReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(\n\t<React.StrictMode>\n\t\t<App />\n\t</React.StrictMode>\n)\n"
+        }
+    ]
+}

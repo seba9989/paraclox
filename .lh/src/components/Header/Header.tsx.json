@@ -1,0 +1,166 @@
+{
+    "sourceFile": "src/components/Header/Header.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 37,
+            "patches": [
+                {
+                    "date": 1684574120873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1684574128529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-import \n\\ No newline at end of file\n+import style from './'\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684574134185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,3 @@\n+import style from './Header.module.scss'\r\n+\r\n+export de\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684574141081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,3 @@\n+import style from './Header.module.scss'\r\n+\r\n+export default function Header\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684574148074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+import style from './Header.module.scss'\r\n+\r\n+export default function Header() {\r\n+    return\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684574156514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,5 @@\n import style from './Header.module.scss'\r\n \r\n export default function Header() {\r\n-    return\r\n-}\n-import style from './Header.module.scss'\r\n-\r\n-export default function Header\n-import style from './Header.module.scss'\r\n-\r\n-export de\n-import style from './'\n\\ No newline at end of file\n+    return <>Header</>\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684574653711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import style from './Header.module.scss'\r\n \r\n export default function Header() {\r\n-    return <>Header</>\r\n-}\n\\ No newline at end of file\n+\treturn <div>Header</div>\r\n+}\r\n"
+                },
+                {
+                    "date": 1684574673820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import style from './Header.module.scss'\r\n \r\n export default function Header() {\r\n-\treturn <div>Header</div>\r\n+\treturn <div >Header</div>\r\n }\r\n"
+                },
+                {
+                    "date": 1684574680725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import style from './Header.module.scss'\r\n \r\n export default function Header() {\r\n-\treturn <div >Header</div>\r\n+\treturn <div className={}>Header</div>\r\n }\r\n"
+                },
+                {
+                    "date": 1684574685934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+import style from './Header.module.scss'\r\n+\r\n+export default function Header() {\r\n+\treturn <div className={sty}>Header</div>\r\n+}\r\n"
+                },
+                {
+                    "date": 1684574693132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+import style from './Header.module.scss'\r\n+\r\n+export default function Header() {\r\n+\treturn <div className={style.main}>Header</div>\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577218080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+import style from './Header.module.scss'\r\n+\r\n+export default function Header() {\r\n+\treturn <div className={style.main}>\r\n+        \r\n+    </div>\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577226438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+import style from './Header.module.scss'\r\n+\r\n+export default function Header() {\r\n+\treturn <div className={style.main}>\r\n+        <Li\r\n+    </div>\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577267365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,29 +1,7 @@\n import style from './Header.module.scss'\r\n \r\n export default function Header() {\r\n \treturn <div className={style.main}>\r\n-        <Li\r\n+        <Na\r\n     </div>\r\n }\r\n-import style from './Header.module.scss'\r\n-\r\n-export default function Header() {\r\n-\treturn <div className={style.main}>\r\n-        \r\n-    </div>\r\n-}\r\n-import style from './Header.module.scss'\r\n-\r\n-export default function Header() {\r\n-\treturn <div className={style.main}>Header</div>\r\n-}\r\n-import style from './Header.module.scss'\r\n-\r\n-export default function Header() {\r\n-\treturn <div className={sty}>Header</div>\r\n-}\r\n-import style from './Header.module.scss'\r\n-\r\n-export default function Header() {\r\n-\treturn <div className={}>Header</div>\r\n-}\r\n"
+                },
+                {
+                    "date": 1684577277385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+import style from './Header.module.scss'\r\n+\r\n+export default function Header() {\r\n+\treturn <div className={style.main}>\r\n+        \r\n+    </div>\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577285104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,8 @@\n import style from './Header.module.scss'\r\n+import { Nav}\r\n \r\n export default function Header() {\r\n \treturn <div className={style.main}>\r\n         \r\n     </div>\r\n }\r\n-import style from './Header.module.scss'\r\n-\r\n-export default function Header() {\r\n-\treturn <div className={style.main}>\r\n-        <Na\r\n-    </div>\r\n-}\r\n"
+                },
+                {
+                    "date": 1684577290671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+import style from './Header.module.scss'\r\n+import { NavLink}\r\n+\r\n+export default function Header() {\r\n+\treturn <div className={style.main}>\r\n+        \r\n+    </div>\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577297689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+import style from './Header.module.scss'\r\n+import { NavLink } from \r\n+\r\n+export default function Header() {\r\n+\treturn <div className={style.main}>\r\n+        \r\n+    </div>\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577303850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+import style from './Header.module.scss'\r\n+import { NavLink } from \"\"\r\n+\r\n+export default function Header() {\r\n+\treturn <div className={style.main}>\r\n+        \r\n+    </div>\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577311822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+import style from './Header.module.scss'\r\n+import { NavLink } from 'react-router-dom'\r\n+\r\n+export default function Header() {\r\n+\treturn <div className={style.main}>\r\n+        \r\n+    </div>\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577319263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+import style from './Header.module.scss'\r\n+import { NavLink } from 'react-router-dom'\r\n+\r\n+export default function Header() {\r\n+\treturn <div className={style.main}>\r\n+        <NavLink to\r\n+    </div>\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577334384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+import style from './Header.module.scss'\r\n+import { NavLink } from 'react-router-dom'\r\n+\r\n+export default function Header() {\r\n+\treturn <div className={style.main}>\r\n+        <NavLink to={}\r\n+    </div>\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577344476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,56 +1,10 @@\n import style from './Header.module.scss'\r\n import { NavLink } from 'react-router-dom'\r\n \r\n export default function Header() {\r\n-\treturn <div className={style.main}>\r\n-        <NavLink to={}\r\n-    </div>\r\n+\treturn (\r\n+\t\t<div className={style.main}>\r\n+\t\t\t<NavLink to={}></NavLink>\r\n+\t\t</div>\r\n+\t)\r\n }\r\n-import style from './Header.module.scss'\r\n-import { NavLink } from 'react-router-dom'\r\n-\r\n-export default function Header() {\r\n-\treturn <div className={style.main}>\r\n-        <NavLink to\r\n-    </div>\r\n-}\r\n-import style from './Header.module.scss'\r\n-import { NavLink } from 'react-router-dom'\r\n-\r\n-export default function Header() {\r\n-\treturn <div className={style.main}>\r\n-        \r\n-    </div>\r\n-}\r\n-import style from './Header.module.scss'\r\n-import { NavLink } from \"\"\r\n-\r\n-export default function Header() {\r\n-\treturn <div className={style.main}>\r\n-        \r\n-    </div>\r\n-}\r\n-import style from './Header.module.scss'\r\n-import { NavLink } from \r\n-\r\n-export default function Header() {\r\n-\treturn <div className={style.main}>\r\n-        \r\n-    </div>\r\n-}\r\n-import style from './Header.module.scss'\r\n-import { NavLink}\r\n-\r\n-export default function Header() {\r\n-\treturn <div className={style.main}>\r\n-        \r\n-    </div>\r\n-}\r\n-import style from './Header.module.scss'\r\n-import { Nav}\r\n-\r\n-export default function Header() {\r\n-\treturn <div className={style.main}>\r\n-        \r\n-    </div>\r\n-}\r\n"
+                },
+                {
+                    "date": 1684577350636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n \r\n export default function Header() {\r\n \treturn (\r\n \t\t<div className={style.main}>\r\n-\t\t\t<NavLink to={}></NavLink>\r\n+\t\t\t<NavLink to=}></NavLink>\r\n \t\t</div>\r\n \t)\r\n }\r\n"
+                },
+                {
+                    "date": 1684577361443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import style from './Header.module.scss'\r\n+import { NavLink } from 'react-router-dom'\r\n+\r\n+export default function Header() {\r\n+\treturn (\r\n+\t\t<div className={style.main}>\r\n+\t\t\t<NavLink to='/'></NavLink>\r\n+\t\t</div>\r\n+\t)\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577366946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import style from './Header.module.scss'\r\n+import { NavLink } from 'react-router-dom'\r\n+\r\n+export default function Header() {\r\n+\treturn (\r\n+\t\t<div className={style.main}>\r\n+\t\t\t<NavLink to='/' ></NavLink>\r\n+\t\t</div>\r\n+\t)\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577373979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,28 +3,10 @@\n \r\n export default function Header() {\r\n \treturn (\r\n \t\t<div className={style.main}>\r\n-\t\t\t<NavLink to='/' ></NavLink>\r\n+\t\t\t<NavLink to='/'>\r\n+                \r\n+            </NavLink>\r\n \t\t</div>\r\n \t)\r\n }\r\n-import style from './Header.module.scss'\r\n-import { NavLink } from 'react-router-dom'\r\n-\r\n-export default function Header() {\r\n-\treturn (\r\n-\t\t<div className={style.main}>\r\n-\t\t\t<NavLink to='/'></NavLink>\r\n-\t\t</div>\r\n-\t)\r\n-}\r\n-import style from './Header.module.scss'\r\n-import { NavLink } from 'react-router-dom'\r\n-\r\n-export default function Header() {\r\n-\treturn (\r\n-\t\t<div className={style.main}>\r\n-\t\t\t<NavLink to=}></NavLink>\r\n-\t\t</div>\r\n-\t)\r\n-}\r\n"
+                },
+                {
+                    "date": 1684577393212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import style from './Header.module.scss'\r\n+import { NavLink } from 'react-router-dom'\r\n+\r\n+export default function Header() {\r\n+\treturn (\r\n+\t\t<div className={style.main}>\r\n+\t\t\t<NavLink to='/' className={}>\r\n+                <img src=\"\" alt=\"\" />\r\n+            </NavLink>\r\n+\t\t</div>\r\n+\t)\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577398398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import style from './Header.module.scss'\r\n+import { NavLink } from 'react-router-dom'\r\n+\r\n+export default function Header() {\r\n+\treturn (\r\n+\t\t<div className={style.main}>\r\n+\t\t\t<NavLink to='/' className={st}>\r\n+                <img src=\"\" alt=\"\" />\r\n+            </NavLink>\r\n+\t\t</div>\r\n+\t)\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577403644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import style from './Header.module.scss'\r\n+import { NavLink } from 'react-router-dom'\r\n+\r\n+export default function Header() {\r\n+\treturn (\r\n+\t\t<div className={style.main}>\r\n+\t\t\t<NavLink to='/' className={style.logo}>\r\n+                <img src=\"\" alt=\"\" />\r\n+            </NavLink>\r\n+\t\t</div>\r\n+\t)\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577410100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import style from './Header.module.scss'\r\n+import { NavLink } from 'react-router-dom'\r\n+\r\n+export default function Header() {\r\n+\treturn (\r\n+\t\t<div className={style.main}>\r\n+\t\t\t<NavLink to='/' className={style.logo}>\r\n+                <img src=\"\" alt=\"Pa\" />\r\n+            </NavLink>\r\n+\t\t</div>\r\n+\t)\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577416677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import style from './Header.module.scss'\r\n+import { NavLink } from 'react-router-dom'\r\n+\r\n+export default function Header() {\r\n+\treturn (\r\n+\t\t<div className={style.main}>\r\n+\t\t\t<NavLink to='/' className={style.logo}>\r\n+                <img src=\"\" alt=\"Para\" />\r\n+            </NavLink>\r\n+\t\t</div>\r\n+\t)\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577425100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import style from './Header.module.scss'\r\n+import { NavLink } from 'react-router-dom'\r\n+\r\n+export default function Header() {\r\n+\treturn (\r\n+\t\t<div className={style.main}>\r\n+\t\t\t<NavLink to='/' className={style.logo}>\r\n+                <img src=\"\" alt=\"<>\" />\r\n+            </NavLink>\r\n+\t\t</div>\r\n+\t)\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577432013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import style from './Header.module.scss'\r\n+import { NavLink } from 'react-router-dom'\r\n+\r\n+export default function Header() {\r\n+\treturn (\r\n+\t\t<div className={style.main}>\r\n+\t\t\t<NavLink to='/' className={style.logo}>\r\n+                <img src=\"\" alt=\"<h1>Par\" />\r\n+            </NavLink>\r\n+\t\t</div>\r\n+\t)\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577438413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import style from './Header.module.scss'\r\n+import { NavLink } from 'react-router-dom'\r\n+\r\n+export default function Header() {\r\n+\treturn (\r\n+\t\t<div className={style.main}>\r\n+\t\t\t<NavLink to='/' className={style.logo}>\r\n+                <img src=\"\" alt=\"<h1>Paraclox<\" />\r\n+            </NavLink>\r\n+\t\t</div>\r\n+\t)\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577452072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import style from './Header.module.scss'\r\n+import { NavLink } from 'react-router-dom'\r\n+\r\n+export default function Header() {\r\n+\treturn (\r\n+\t\t<div className={style.main}>\r\n+\t\t\t<NavLink to='/' className={style.logo}>\r\n+\t\t\t\t<img src='' alt=<h1>Paraclox</h1>' />\r\n+\t\t\t</NavLink>\r\n+\t\t</div>\r\n+\t)\r\n+}\r\n"
+                },
+                {
+                    "date": 1684577459396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,117 +4,9 @@\n export default function Header() {\r\n \treturn (\r\n \t\t<div className={style.main}>\r\n \t\t\t<NavLink to='/' className={style.logo}>\r\n-\t\t\t\t<img src='' alt=<h1>Paraclox</h1>' />\r\n+\t\t\t\t<img src='' alt={<h1>Paraclox</h1>} />\r\n \t\t\t</NavLink>\r\n \t\t</div>\r\n \t)\r\n }\r\n-import style from './Header.module.scss'\r\n-import { NavLink } from 'react-router-dom'\r\n-\r\n-export default function Header() {\r\n-\treturn (\r\n-\t\t<div className={style.main}>\r\n-\t\t\t<NavLink to='/' className={style.logo}>\r\n-                <img src=\"\" alt=\"<h1>Paraclox<\" />\r\n-            </NavLink>\r\n-\t\t</div>\r\n-\t)\r\n-}\r\n-import style from './Header.module.scss'\r\n-import { NavLink } from 'react-router-dom'\r\n-\r\n-export default function Header() {\r\n-\treturn (\r\n-\t\t<div className={style.main}>\r\n-\t\t\t<NavLink to='/' className={style.logo}>\r\n-                <img src=\"\" alt=\"<h1>Par\" />\r\n-            </NavLink>\r\n-\t\t</div>\r\n-\t)\r\n-}\r\n-import style from './Header.module.scss'\r\n-import { NavLink } from 'react-router-dom'\r\n-\r\n-export default function Header() {\r\n-\treturn (\r\n-\t\t<div className={style.main}>\r\n-\t\t\t<NavLink to='/' className={style.logo}>\r\n-                <img src=\"\" alt=\"<>\" />\r\n-            </NavLink>\r\n-\t\t</div>\r\n-\t)\r\n-}\r\n-import style from './Header.module.scss'\r\n-import { NavLink } from 'react-router-dom'\r\n-\r\n-export default function Header() {\r\n-\treturn (\r\n-\t\t<div className={style.main}>\r\n-\t\t\t<NavLink to='/' className={style.logo}>\r\n-                <img src=\"\" alt=\"Para\" />\r\n-            </NavLink>\r\n-\t\t</div>\r\n-\t)\r\n-}\r\n-import style from './Header.module.scss'\r\n-import { NavLink } from 'react-router-dom'\r\n-\r\n-export default function Header() {\r\n-\treturn (\r\n-\t\t<div className={style.main}>\r\n-\t\t\t<NavLink to='/' className={style.logo}>\r\n-                <img src=\"\" alt=\"Pa\" />\r\n-            </NavLink>\r\n-\t\t</div>\r\n-\t)\r\n-}\r\n-import style from './Header.module.scss'\r\n-import { NavLink } from 'react-router-dom'\r\n-\r\n-export default function Header() {\r\n-\treturn (\r\n-\t\t<div className={style.main}>\r\n-\t\t\t<NavLink to='/' className={style.logo}>\r\n-                <img src=\"\" alt=\"\" />\r\n-            </NavLink>\r\n-\t\t</div>\r\n-\t)\r\n-}\r\n-import style from './Header.module.scss'\r\n-import { NavLink } from 'react-router-dom'\r\n-\r\n-export default function Header() {\r\n-\treturn (\r\n-\t\t<div className={style.main}>\r\n-\t\t\t<NavLink to='/' className={st}>\r\n-                <img src=\"\" alt=\"\" />\r\n-            </NavLink>\r\n-\t\t</div>\r\n-\t)\r\n-}\r\n-import style from './Header.module.scss'\r\n-import { NavLink } from 'react-router-dom'\r\n-\r\n-export default function Header() {\r\n-\treturn (\r\n-\t\t<div className={style.main}>\r\n-\t\t\t<NavLink to='/' className={}>\r\n-                <img src=\"\" alt=\"\" />\r\n-            </NavLink>\r\n-\t\t</div>\r\n-\t)\r\n-}\r\n-import style from './Header.module.scss'\r\n-import { NavLink } from 'react-router-dom'\r\n-\r\n-export default function Header() {\r\n-\treturn (\r\n-\t\t<div className={style.main}>\r\n-\t\t\t<NavLink to='/'>\r\n-                \r\n-            </NavLink>\r\n-\t\t</div>\r\n-\t)\r\n-}\r\n"
+                },
+                {
+                    "date": 1684577473724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n export default function Header() {\r\n \treturn (\r\n \t\t<div className={style.main}>\r\n \t\t\t<NavLink to='/' className={style.logo}>\r\n-\t\t\t\t<img src='' alt={<h1>Paraclox</h1>} />\r\n-\t\t\t</NavLink>\r\n+                <img src=\"\" alt=\"Paraclox\" />\r\n+            </NavLink>\r\n \t\t</div>\r\n \t)\r\n }\r\n"
+                }
+            ],
+            "date": 1684574120873,
+            "name": "Commit-0",
+            "content": "import "
+        }
+    ]
+}

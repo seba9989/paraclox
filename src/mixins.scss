@@ -1,0 +1,13 @@
+@mixin border($border-type, $background) {
+	background: $background;
+	border-color: $background;
+	@if $border-type == full {
+		border: 0.5rem solid;
+	} @else {
+		border-#{$border-type}: 0.5rem solid;
+	}
+
+	border-image-source: url('https://raw.githubusercontent.com/seba9989/paraclox/main/src/assets/UI/borders/default/dark.png');
+	border-image-slice: 10;
+	background-clip: padding-box;
+}
