@@ -42,7 +42,7 @@ export default function Header() {
 				/>
 			</Link>
 			<Nav>
-				<NavLink to='/game' className={({ isActive, isPending }) => (isActive ? 'active' : '')}>
+				<NavLink to='/game' className={({ isActive }) => (isActive ? 'active' : '')}>
 					Game
 				</NavLink>
 				<Link to='https://github.com/seba9989/paraclox'>GitHub</Link>

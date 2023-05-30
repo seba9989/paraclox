@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Global, css } from '@emotion/react'
 import Layout from './layout'
-import Home from './pages/Home'
+import NotReady from './components/Not_Ready_Yet_Page/Not_Ready_Yet_Page'
 
 const router = createBrowserRouter([
 	{
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: '/',
-				element: <Home />,
+				element: <NotReady />,
 			},
 		],
 	},
