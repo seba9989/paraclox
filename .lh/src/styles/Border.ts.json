@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/styles/Border.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1685381877864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1685381888962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n type borderType = 'top' | 'left' | 'right' | 'bottom' | 'full'\r\n \r\n export default function BorderStyle(borderType: borderType) {\r\n \treturn css`\r\n-\t\tborder-color: ${background};\r\n+\t\tborder-color: transparent;\r\n \t\t${borderType === 'full' ? `border: 0.5rem solid;` : `border-${borderType}: 0.5rem solid;`}\r\n \t\tborder-image-source: url('https://raw.githubusercontent.com/seba9989/paraclox/main/src/assets/UI/borders/default/dark.png');\r\n \t\tborder-image-slice: 10;\r\n \t\tbackground-clip: padding-box;\r\n"
+                },
+                {
+                    "date": 1685381903999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import { css } from '@emotion/react'\r\n+\r\n+type borderType = 'top' | 'left' | 'right' | 'bottom' | 'full'\r\n+\r\n+export default function BorderStyle(borderType: borderType) {\r\n+\treturn css`\r\n+\t\tborder-color: transparent;\r\n+\t\t${borderType === 'full' ? css`border: 0.5rem solid;` : `border-${borderType}: 0.5rem solid;`}\r\n+\t\tborder-image-source: url('https://raw.githubusercontent.com/seba9989/paraclox/main/src/assets/UI/borders/default/dark.png');\r\n+\t\tborder-image-slice: 10;\r\n+\t\tbackground-clip: padding-box;\r\n+\t`\r\n+}\r\n"
+                }
+            ],
+            "date": 1685381877864,
+            "name": "Commit-0",
+            "content": "import { css } from '@emotion/react'\r\n\r\ntype borderType = 'top' | 'left' | 'right' | 'bottom' | 'full'\r\n\r\nexport default function BorderStyle(borderType: borderType, background: string) {\r\n\treturn css`\r\n\t\tborder-color: ${background};\r\n\t\t${borderType === 'full' ? `border: 0.5rem solid;` : `border-${borderType}: 0.5rem solid;`}\r\n\t\tborder-image-source: url('https://raw.githubusercontent.com/seba9989/paraclox/main/src/assets/UI/borders/default/dark.png');\r\n\t\tborder-image-slice: 10;\r\n\t\tbackground-clip: padding-box;\r\n\t`\r\n}\r\n"
+        }
+    ]
+}
