@@ -23,7 +23,7 @@ export default function NotReady() {
 		<Main>
 			<h1>I'm sorry {pathname === '/' ? 'home' : pathname} page is not ready yet.</h1>
 			<p>
-				If you want to help let me know on <a href=''>discord</a>.
+				If you want to help let me know on <a href='https://discord.gg/BjSvSG9PjD'>discord</a>.
 			</p>
 		</Main>
 	)
