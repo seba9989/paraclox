@@ -35,7 +35,7 @@ const Nav = styled.nav`
 export default function Header() {
 	return (
 		<Main>
-			<Link to='/test'>
+			<Link to='/'>
 				<img
 					src='https://github.com/seba9989/paraclox/blob/main/src/assets/UI/logos/full.png?raw=true'
 					alt='Paraclox'

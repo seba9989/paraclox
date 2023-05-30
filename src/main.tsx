@@ -14,6 +14,18 @@ const router = createBrowserRouter([
 				path: '/',
 				element: <NotReady />,
 			},
+			{
+				path: '/game',
+				element: <NotReady />,
+			},
+			{
+				path: '/help',
+				element: <NotReady />,
+			},
+			{
+				path: '/logIn',
+				element: <NotReady />,
+			},
 		],
 	},
 ])
