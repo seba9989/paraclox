@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 
 const Main = styled.div`
 	font-family: sans-serif;
-	margin: auto;
+	margin: 0 auto;
 
 	a {
 		color: #888;

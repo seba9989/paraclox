@@ -10,14 +10,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.15",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
+    "@xstate/react": "^3.2.2",
+    "graphql": "^16.6.0",
+    "graphql-request": "^6.1.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.44.3",
     "react-router-dom": "^6.11.2",
-    "sort-by": "^1.2.0"
+    "sort-by": "^1.2.0",
+    "xstate": "^4.37.2",
+    "zustand": "^4.3.8"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",

@@ -2,8 +2,15 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Global, css } from '@emotion/react'
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
 import Layout from './layout'
 import NotReady from './components/Not_Ready_Yet_Page/Not_Ready_Yet_Page'
+import Game from './pages/Game'
+
+const client = new ApolloClient({
+	uri: 'https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cli6deigp38in01uoapzzbpzu/master',
+	cache: new InMemoryCache(),
+})
 
 const router = createBrowserRouter([
 	{
@@ -16,7 +23,7 @@ const router = createBrowserRouter([
 			},
 			{
 				path: '/game',
-				element: <NotReady />,
+				element: <Game />,
 			},
 			{
 				path: '/help',
@@ -55,7 +62,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 				}
 			`}
 		/>
-
-		<RouterProvider router={router} />
+		<ApolloProvider client={client}>
+			<RouterProvider router={router} />
+		</ApolloProvider>
 	</React.StrictMode>
 )

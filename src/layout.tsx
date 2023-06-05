@@ -5,6 +5,7 @@ import { Outlet } from 'react-router-dom'
 const Flex = styled.main`
 	display: flex;
 	flex-direction: column;
+	height: 100vh;
 `
 
 export default function Layout() {
