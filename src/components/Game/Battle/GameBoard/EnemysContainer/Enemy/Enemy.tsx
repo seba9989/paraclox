@@ -14,6 +14,10 @@ const Main = styled.div`
 	justify-content: center;
 
 	overflow: hidden;
+
+	&.dead {
+		display: none;
+	}
 `
 
 const EnemyImg = styled.img`
@@ -88,7 +92,7 @@ export const Enemy = ({ index }: { index: number }) => {
 	const setAttackTarget = useAttackStore(store => store.setCurrentTarget)
 
 	return (
-		<Main onClick={() => setAttackTarget(index)}>
+		<Main onClick={() => setAttackTarget(index)} className={`${!enemyHp.current && 'dead'}`}>
 			<Hp>
 				<div className={`enemyHp${index} enemyHp`} />
 				<div className={`enemyHpValue${index}`}>0/0</div>
