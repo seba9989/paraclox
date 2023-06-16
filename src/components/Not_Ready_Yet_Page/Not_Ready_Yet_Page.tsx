@@ -14,7 +14,7 @@ const Main = styled.div`
 	}
 `
 
-export default function NotReady() {
+export const NotReady = () => {
 	const pathname = window.location.pathname
 
 	console.log(pathname)

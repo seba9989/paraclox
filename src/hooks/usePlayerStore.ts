@@ -34,20 +34,19 @@ const usePlayerStore = create<PlayerStore>()((set, get) => ({
 	player: {} as Player,
 	dispatch: (action, value) => {
 		switch (action) {
-			case 'hp':
+			case 'Hp':
 				get().player.hp.current = value
 				break
 		}
 		set({ ...get() })
 		console.log(get())
 	},
-	setPlayer(name) {
-		request<{ player: Player }>(url, getPlayer, { name }).then(player => {
-			const data: Player = player.player
-			get().player = data
-			set({ ...get() })
-			console.log(get())
-		})
+	setPlayer: async name => {
+		const player = (await request<{ player: Player }>(url, getPlayer, { name })).player
+
+		set({ ...get(), player })
+
+		console.log(get().player)
 	},
 }))
 

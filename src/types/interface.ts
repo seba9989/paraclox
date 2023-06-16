@@ -12,9 +12,10 @@ export interface Enemy {
 	attacks: [] | never[]
 	hp: CurrentAndMax
 }
-export interface EnemysContext {
+export interface EnemysStore {
 	enemys: Enemy[]
-	dispatch: (enemyId: number, changedValue: { type: Type.changeStatsAction; value: number }) => void
+	dispatch: (enemy: number, action: Type.changeStatsAction, value: number) => void
+	setEnemy: (enemysNames: string[]) => void
 }
 
 //Player
@@ -27,19 +28,14 @@ interface Attack {
 	activate?: () => void
 }
 
-interface Back {
-	name: string
-	activate?: () => void
-}
-
 export interface Player {
 	name: string
 	hp: CurrentAndMax
 	energy: CurrentAndMax
 	weapons: {
 		name: string
-		attacks: (Attack | Back)[]
-	}
+		attacks: Attack[]
+	}[]
 	// inventory: {
 	// 	name: string
 	// }[]

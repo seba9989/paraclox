@@ -7,7 +7,7 @@ export default function Test() {
 
 	return (
 		<>
-			<button onClick={() => setHP('hp', 1)}>HP: {`${hp.hp}`}</button>
+			<button onClick={() => setHP('Hp', 1)}>HP: {`${hp.hp}`}</button>
 		</>
 	)
 }

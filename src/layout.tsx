@@ -8,7 +8,7 @@ const Flex = styled.main`
 	height: 100vh;
 `
 
-export default function Layout() {
+export const Layout = () => {
 	return (
 		<Flex>
 			<Header />

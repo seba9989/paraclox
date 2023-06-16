@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Global, css } from '@emotion/react'
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
-import Layout from './layout'
-import NotReady from './components/Not_Ready_Yet_Page/Not_Ready_Yet_Page'
-import Game from './pages/Game'
+import { Layout } from './layout'
+import { NotReady } from './components/Not_Ready_Yet_Page/Not_Ready_Yet_Page'
+import { Game } from './pages/Game'
 
 const client = new ApolloClient({
 	uri: 'https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cli6deigp38in01uoapzzbpzu/master',
@@ -54,6 +54,11 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 				body {
 					background-color: #212121;
 					margin: 0;
+					/* overflow-x: hidden; */
+					font-family: 'Press Start 2P', sans-serif;
+				}
+
+				button {
 					font-family: 'Press Start 2P', sans-serif;
 				}
 

@@ -14,7 +14,7 @@ const Background = styled.div`
 	height: 100%;
 
 	background-image: url('https://github.com/seba9989/paraclox/blob/main/src/assets/battle-screen/backgrounds/postapo-green-day.png?raw=true');
-	background-position: center 100%;
+	background-position: center top;
 	background-color: #212121;
 	background-repeat: repeat no-repeat;
 	background-size: 90%;
@@ -81,8 +81,6 @@ const Button = styled.button`
 	color: #888;
 	transition: 250ms;
 
-	font-family: 'Press Start 2P', sans-serif;
-
 	${BorderStyle('full')}
 
 	&:hover {
@@ -90,7 +88,7 @@ const Button = styled.button`
 	}
 `
 
-export default function ChooseCharacter() {
+export const ChooseCharacter = () => {
 	//GameMachine
 	const { gameService } = useContext(GameMachineContext)
 
