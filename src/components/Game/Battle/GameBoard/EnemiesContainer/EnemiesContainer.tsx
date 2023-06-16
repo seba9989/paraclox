@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import { Enemy } from './Enemy/Enemy'
-import { useEnemysStore } from '../../../../../hooks/useEnemysStore'
+import { useEnemiesStore } from '../../../../../hooks/useEnemiesStore'
 import { shallow } from 'zustand/shallow'
 
 const Main = styled.div`
@@ -11,17 +11,17 @@ const Main = styled.div`
 	justify-content: end;
 `
 
-export const EnemysContainer = () => {
-	const enemys = useEnemysStore(
+export const EnemiesContainer = () => {
+	const enemies = useEnemiesStore(
 		store => ({
-			list: store.enemys,
+			list: store.enemies,
 		}),
 		shallow
 	)
 
 	return (
 		<Main>
-			{enemys.list.map((_enemy, index) => (
+			{enemies.list.map((_enemy, index) => (
 				<Enemy index={index} key={index} />
 			))}
 		</Main>

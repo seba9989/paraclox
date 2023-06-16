@@ -1,11 +1,11 @@
 import { shallow } from 'zustand/shallow'
-import { useEnemysStore } from './useEnemysStore'
+import { useEnemiesStore } from './useEnemiesStore'
 import { useAttackStore } from './useAttackStore'
 import usePlayerStore from './usePlayerStore'
 import { useEffect } from 'react'
 
 export const useAttack = () => {
-	const enemys = useEnemysStore(
+	const enemies = useEnemiesStore(
 		store => ({
 			dispatch: store.dispatch,
 		}),
@@ -35,10 +35,10 @@ export const useAttack = () => {
 			const attack = weapon?.attacks.find(i => i.name === attackStore.currentAttackName)
 
 			{
-				attack && enemys.dispatch(attackStore.currentAttackTarget, 'Hp', attack.dmg)
+				attack && enemies.dispatch(attackStore.currentAttackTarget, 'Hp', attack.dmg)
 			}
 
 			attackStore.reset()
 		}
-	}, [allWeapons, attackStore, enemys])
+	}, [allWeapons, attackStore, enemies])
 }

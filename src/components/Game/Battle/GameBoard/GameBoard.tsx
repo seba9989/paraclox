@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { Player } from './Player/Player'
-import { EnemysContainer } from './EnemysContainer/EnemysContainer'
-import {useEnemysStore} from '../../../../hooks/useEnemysStore'
+import { EnemiesContainer } from './EnemiesContainer/EnemiesContainer'
+import { useEnemiesStore } from '../../../../hooks/useEnemiesStore'
 
 const Main = styled.div`
 	height: 100%;
@@ -20,12 +20,12 @@ const Main = styled.div`
 `
 
 export const GameBoard = () => {
-	const enemy = useEnemysStore(store => store.enemys[0])
+	const enemy = useEnemiesStore(store => store.enemies[0])
 
 	return (
 		<Main>
 			<Player height='60%' />
-			{enemy && <EnemysContainer />}
+			{enemy && <EnemiesContainer />}
 		</Main>
 	)
 }

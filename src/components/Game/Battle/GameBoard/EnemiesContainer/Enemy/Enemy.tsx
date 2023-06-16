@@ -1,8 +1,8 @@
 import styled from '@emotion/styled'
 import BorderStyle from '../../../../../../styles/Border'
-import { useEnemysStore } from '../../../../../../hooks/useEnemysStore'
+import { useEnemiesStore } from '../../../../../../hooks/useEnemiesStore'
 import { useEffect } from 'react'
-import { animate } from 'motion'
+import { animate, timeline } from 'motion'
 import { shallow } from 'zustand/shallow'
 import { useAttackStore } from '../../../../../../hooks/useAttackStore'
 
@@ -14,10 +14,6 @@ const Main = styled.div`
 	justify-content: center;
 
 	overflow: hidden;
-
-	&.dead {
-		display: none;
-	}
 `
 
 const EnemyImg = styled.img`
@@ -59,18 +55,20 @@ const Hp = styled.div`
 	}
 `
 
+const padding = { paddingBottom: `${Math.round(Math.random() * 75)}px` }
+
 export const Enemy = ({ index }: { index: number }) => {
-	const enemyHp = useEnemysStore(
+	const enemyHp = useEnemiesStore(
 		store => ({
-			current: store.enemys[index].hp.current,
-			max: store.enemys[index].hp.max,
+			current: store.enemies[index].hp.current,
+			max: store.enemies[index].hp.max,
 		}),
 		shallow
 	)
 
-	const percentHp = (enemyHp.current / enemyHp.max) * 100
-
 	useEffect(() => {
+		const percentHp = (enemyHp.current / enemyHp.max) * 100
+
 		const HpText = document.querySelector(`.enemyHpValue${index}`)
 
 		const oldHp = HpText ? Number(HpText.innerHTML.split('/')[0]) : 0
@@ -86,13 +84,22 @@ export const Enemy = ({ index }: { index: number }) => {
 				easing: 'ease-out',
 			}
 		)
-		animate(`.enemyHp${index}`, { width: `${percentHp}%` }, { duration: 2 })
-	}, [enemyHp, index, percentHp])
+
+		if (enemyHp.current > 0) {
+			animate(`.enemyHp${index}`, { width: `${percentHp}%` }, { duration: 2 })
+		} else {
+			timeline([
+				[`.enemyHp${index}`, { width: `${percentHp}%` }, { duration: 2 }],
+				[`.Enemy${index}`, { opacity: [1, 0] }, { duration: 0.5 }],
+				[`.Enemy${index}`, { display: 'none' }],
+			])
+		}
+	}, [enemyHp, index])
 
 	const setAttackTarget = useAttackStore(store => store.setCurrentTarget)
 
 	return (
-		<Main onClick={() => setAttackTarget(index)} className={`${!enemyHp.current && 'dead'}`}>
+		<Main onClick={() => setAttackTarget(index)} className={`Enemy${index}`} style={padding}>
 			<Hp>
 				<div className={`enemyHp${index} enemyHp`} />
 				<div className={`enemyHpValue${index}`}>0/0</div>
@@ -100,7 +107,6 @@ export const Enemy = ({ index }: { index: number }) => {
 			<EnemyImg
 				src='https://github.com/seba9989/paraclox/blob/main/src/assets/enemys/BetaEnemy/idle.gif?raw=true'
 				alt=''
-				style={{ paddingBottom: `${Math.round(Math.random() * 75)}px` }}
 			/>
 		</Main>
 	)

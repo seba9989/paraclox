@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import { ControlPanel } from './ControlPanel/ControlPanel'
-import {useEnemysStore} from '../../../hooks/useEnemysStore'
+import { useEnemiesStore } from '../../../hooks/useEnemiesStore'
 import { GameBoard } from './GameBoard/GameBoard'
 
 const Main = styled.div`
@@ -15,9 +15,9 @@ const ControlPanelWrapper = styled.div`
 `
 
 export const Battle = () => {
-	const setEnemys = useEnemysStore(store => store.setEnemy)
+	const setEnemies = useEnemiesStore(store => store.setEnemies)
 
-	setEnemys(['Zombi', 'Zombi', 'Zombi'])
+	setEnemies(['Zombi', 'Zombi', 'Zombi'])
 
 	return (
 		<Main>

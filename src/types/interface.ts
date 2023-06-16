@@ -12,10 +12,10 @@ export interface Enemy {
 	attacks: [] | never[]
 	hp: CurrentAndMax
 }
-export interface EnemysStore {
-	enemys: Enemy[]
+export interface EnemiesStore {
+	enemies: Enemy[]
 	dispatch: (enemy: number, action: Type.changeStatsAction, value: number) => void
-	setEnemy: (enemysNames: string[]) => void
+	setEnemies: (enemiesNames: string[]) => void
 }
 
 //Player
