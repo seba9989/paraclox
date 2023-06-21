@@ -8,7 +8,7 @@ const Main = styled.div`
 	display: flex;
 
 	align-items: end;
-	justify-content: end;
+	justify-content: center;
 `
 
 export const EnemiesContainer = () => {

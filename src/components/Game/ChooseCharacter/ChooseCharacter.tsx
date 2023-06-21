@@ -13,7 +13,7 @@ const Background = styled.div`
 	width: 100%;
 	height: 100%;
 
-	background-image: url('https://github.com/seba9989/paraclox/blob/main/src/assets/battle-screen/backgrounds/postapo-green-day.png?raw=true');
+	background-image: url('/src/assets/battle-screen/backgrounds/postapo-green-day.png');
 	background-position: center top;
 	background-color: #212121;
 	background-repeat: repeat no-repeat;
@@ -51,14 +51,32 @@ const RadioCharacter = styled.li`
 	input {
 		display: none;
 	}
-	img {
-		width: 100%;
+
+	label {
+		display: flex;
+
+		aspect-ratio: 535 / 635;
+
+		cursor: pointer;
+
+		background-image: url('/src/assets/UI/character-icons/not-active/mage.png');
+		background-size: cover;
+	}
+
+	input:checked + label {
+		background-image: url(${(props: { name: string }) => `/src/assets/UI/character-icons/active/${props.name}.png`});
 	}
 `
 
 const Character = styled.div`
 	height: 75%;
-	margin: auto -5%;
+	background-position: center;
+	background-size: cover;
+
+	margin: auto 0;
+
+	aspect-ratio: 32 / 64;
+	background-image: url(${(props: { name: string }) => `/src/assets/characters/${props.name}/idle.gif`});
 `
 
 const CharacterDescription = styled.div`
@@ -129,25 +147,13 @@ export const ChooseCharacter = () => {
 				<CharacterList>
 					{!loading &&
 						data.players.map(({ name }: { name: string }) => (
-							<RadioCharacter key={name}>
+							<RadioCharacter name={name} key={name}>
 								<input {...register('selectCharacter')} type='radio' id={`${name}`} value={name} />
-								<label htmlFor={`${name}`}>
-									<img
-										src={`https://github.com/seba9989/paraclox/blob/main/src/assets/UI/character-icons/${
-											formWatch === name ? 'active' : 'not-active'
-										}/${name}.png?raw=true`}
-										alt={name}
-									/>
-								</label>
+								<label htmlFor={`${name}`}></label>
 							</RadioCharacter>
 						))}
 				</CharacterList>
-				<Character>
-					<img
-						src={`https://github.com/seba9989/paraclox/blob/main/src/assets/characters/${formWatch}/idle.gif?raw=true`}
-						alt=''
-					/>
-				</Character>
+				<Character name={formWatch} />
 				<CharacterDescription>
 					<div>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nostrum perspiciatis possimus cum velit

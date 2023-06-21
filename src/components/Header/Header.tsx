@@ -9,8 +9,12 @@ const Main = styled.div`
 
 	${BorderStyle('bottom')}
 
-	a {
+	.logo {
+		aspect-ratio: 620 / 160;
+
 		margin: 10px;
+		background-image: url('/src/assets/UI/logos/full.png');
+		background-size: cover;
 	}
 `
 
@@ -20,7 +24,7 @@ const Nav = styled.nav`
 	padding: 10px;
 
 	a {
-		margin: 0;
+		padding: 10px;
 		margin: auto;
 		color: #888;
 		transition: 500ms;
@@ -35,12 +39,7 @@ const Nav = styled.nav`
 export default function Header() {
 	return (
 		<Main>
-			<Link to='/'>
-				<img
-					src='https://github.com/seba9989/paraclox/blob/main/src/assets/UI/logos/full.png?raw=true'
-					alt='Paraclox'
-				/>
-			</Link>
+			<Link to='/' className='logo' />
 			<Nav>
 				<NavLink to='/game' className={({ isActive }) => (isActive ? 'active' : '')}>
 					Game

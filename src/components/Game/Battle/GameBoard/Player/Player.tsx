@@ -1,25 +1,27 @@
 import styled from '@emotion/styled'
 import usePlayerStore from '../../../../../hooks/usePlayerStore'
 
-const padding = Math.round(Math.random() * 75)
-
 const Main = styled.div`
-	height: ${(props: { height: string }) => props.height};
+	height: 60%;
 
 	display: flex;
 
-	padding-bottom: ${padding}px;
+	margin-bottom: ${Math.round(Math.random() * 75)}px;
 `
 
-export const Player = ({ height }: { height: string }) => {
+const PlayerImg = styled.div`
+	aspect-ratio: 64 / 64;
+	background-size: cover;
+
+	background-image: url(${(props: { name: string }) => `/src/assets/characters/${props.name}/idle.gif`});
+`
+
+export const Player = () => {
 	const playerName = usePlayerStore(store => store.player.name)
 
 	return (
-		<Main height={height}>
-			<img
-				src={`https://github.com/seba9989/paraclox/blob/main/src/assets/characters/${playerName.toLowerCase()}/idle.gif?raw=true`}
-				alt=''
-			/>
+		<Main>
+			<PlayerImg name={playerName} />
 		</Main>
 	)
 }

@@ -12,7 +12,7 @@ export default function BorderStyle(borderType: borderType) {
 			: css`
 					border-${borderType}: 0.5rem solid;
 			`}
-		border-image-source: url('https://raw.githubusercontent.com/seba9989/paraclox/main/src/assets/UI/borders/default/dark.png');
+		border-image-source: url('/src/assets/UI/borders/default/dark.png');
 		border-image-slice: 10;
 		background-clip: padding-box;
 	`

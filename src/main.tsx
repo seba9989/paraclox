@@ -49,6 +49,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 					box-sizing: border-box;
 					text-decoration: none;
 					color: #fff;
+					image-rendering: pixelated;
 				}
 
 				body {

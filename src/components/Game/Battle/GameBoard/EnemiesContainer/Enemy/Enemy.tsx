@@ -8,23 +8,49 @@ import { useAttackStore } from '../../../../../../hooks/useAttackStore'
 
 const Main = styled.div`
 	height: 60%;
-
+	aspect-ratio: 32 / 64;
+	min-width: fit-content;
 	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 100%;
 
 	justify-content: center;
 
 	overflow: hidden;
-`
+	margin-right: 50px;
 
-const EnemyImg = styled.img`
-	scale: -1 1;
-	grid-row: 1;
-	grid-column: 1;
+	&::after {
+		height: 100%;
+		width: 100%;
+		content: '';
+
+		grid-column: 1;
+		grid-row: 1;
+
+		scale: -1 1;
+
+		background-size: cover;
+		background-position-x: 75%;
+		background-image: url(${`/src/assets/enemies/p_zombie/1/idle.gif`});
+	}
+
+	&.Enemy0 {
+		margin-bottom: ${Math.round(Math.random() * 75)}px;
+	}
+
+	&.Enemy1 {
+		margin-bottom: ${Math.round(Math.random() * 75)}px;
+	}
+
+	&.Enemy2 {
+		margin-bottom: ${Math.round(Math.random() * 75)}px;
+	}
 `
 
 const Hp = styled.div`
 	height: fit-content;
-	width: 50%;
+	width: 80%;
+	min-width: fit-content;
 
 	margin: 0 auto;
 
@@ -47,6 +73,7 @@ const Hp = styled.div`
 		grid-row: 1;
 
 		text-align: center;
+		padding-top: 2.5px;
 	}
 
 	.enemyHp {
@@ -54,8 +81,6 @@ const Hp = styled.div`
 		background: #771820;
 	}
 `
-
-const padding = { paddingBottom: `${Math.round(Math.random() * 75)}px` }
 
 export const Enemy = ({ index }: { index: number }) => {
 	const enemyHp = useEnemiesStore(
@@ -65,6 +90,8 @@ export const Enemy = ({ index }: { index: number }) => {
 		}),
 		shallow
 	)
+
+	const AttackDone = useAttackStore(store => store.currentAttackName)
 
 	useEffect(() => {
 		const percentHp = (enemyHp.current / enemyHp.max) * 100
@@ -99,15 +126,14 @@ export const Enemy = ({ index }: { index: number }) => {
 	const setAttackTarget = useAttackStore(store => store.setCurrentTarget)
 
 	return (
-		<Main onClick={() => setAttackTarget(index)} className={`Enemy${index}`} style={padding}>
+		<Main
+			onClick={() => setAttackTarget(index)}
+			className={`Enemy${index}`}
+			style={AttackDone ? { cursor: 'pointer' } : {}}>
 			<Hp>
 				<div className={`enemyHp${index} enemyHp`} />
 				<div className={`enemyHpValue${index}`}>0/0</div>
 			</Hp>
-			<EnemyImg
-				src='https://github.com/seba9989/paraclox/blob/main/src/assets/enemys/BetaEnemy/idle.gif?raw=true'
-				alt=''
-			/>
 		</Main>
 	)
 }

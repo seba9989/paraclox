@@ -30,6 +30,8 @@ const Button = styled.button`
 	${BorderStyle('full')}
 
 	grid-row: ${(props: { default?: boolean }) => (props.default ? '2' : '1')};
+
+	cursor: pointer;
 `
 
 const buttonsMachine = createMachine({
